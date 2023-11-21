@@ -1,0 +1,520 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: rgba(211, 211, 211, 0.788);
+    scroll-behavior: smooth;
+}
+/* ================= page-1 start =================== */
+
+.page1{
+    height: 100vh;
+    width: 100%;
+}
+.page1-top{
+    height: 20vh;
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+}
+.headding{
+    height: 20vh;
+    width: 40%;
+    /* background-color: red; */
+}
+.headding >h1{
+    line-height: 4vmax;
+    padding-left: 5vw;
+    font-size: 4.5vmax;
+    font-family: 'IM Fell DW Pica SC', serif;
+    padding-top: 2vh;
+}
+.headding >h1 >span{
+    padding-left: 8vmax;
+    color: rgba(0, 0, 0, 0.733);
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 20vh;
+    width: 60%;
+    /* background-color: aqua; */
+}
+.arrow >i{
+    /* background-color: orangered; */
+    margin-right: 6vw;
+    padding: 0.5vmax;
+    font-size: 3vmax;
+    border: none;
+    border-bottom: 0.1vmax solid black;
+    border-right: 0.1vmax solid black;
+    border-radius: 5vmax;
+}
+.page1-bottom{
+    height: 80vh;
+    width: 100%;
+    /* background-color: yellowgreen; */
+}
+.page1-images{
+    height: 30vh;
+    width: 100%;
+    /* background-color: tan; */
+    display: flex;
+    justify-content: space-between;
+}
+.page1-img1{
+    height: 30vh;
+    border-radius: 0.5vmax;
+    width: 15%;
+    background-color: red;
+    background-image: url(./page1-img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page1-img4{
+    height: 30vh;
+    border-radius: 0.5vmax;
+    width: 15%;
+    background-color: red;
+    background-image: url(./page1-img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page1-img2{
+    height: 30vh;
+    border-radius: 0.5vmax;
+    width: 34.5%;
+    background-color: palevioletred;
+    background-image: url(./page1-img4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease;
+}
+.page1-img2:hover{
+    height: 55vh;
+}
+.page1-img3{
+    height: 30vh;
+    width: 34.5%;
+    border-radius: 0.5vmax;
+    background-color: rosybrown;
+    background-image: url(./page1-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    transition: all 1s ease;
+}
+.page1-img3:hover{
+    height: 55vh;
+}
+.circle{
+    height: 7vmax;
+    width: 7vmax;
+    background-color: rosybrown;
+    border-radius: 5vmax;
+    margin: 3vmax;
+}
+.circle >h1{
+    font-size: 2vmax;
+    padding-top: 2.3vmax;
+    padding-left: 0.7vmax;
+    line-height: 1.5vmax;
+    font-family: 'IM Fell DW Pica SC', serif;
+
+}
+.circle >h1 >span{
+    font-size: 1.5vmax;
+    padding-left: 2vmax;
+}
+
+@media (max-width: 600px) {
+    .page1{
+        width: 100%;
+        height: 100vh;
+        /* background-color: red; */
+    }
+    .page1-top{
+        height: 20vh;
+        display: initial;
+    }
+    .headding{
+        width: 100%;
+        height: 10vh;
+        /* background-color: powderblue; */
+    }
+    .headding >h1{
+        margin-left: 10vw;
+        padding-top: 1vh;
+    }
+    .arrow{
+        height: 10vh;
+        width: 100%;
+        /* background-color: palegreen; */
+        justify-content: center;
+        padding-left: 5vw;
+    }
+    .page1-bottom{
+        height: 80vh;
+        width: 100%;
+    }
+    .page1-images{
+        height: 20vh;
+        flex-direction: column;
+        height: 100vh;
+        margin-bottom: 100vh;
+    }
+    .page1-img1, .page1-img2, .page1-img3, .page1-img4{
+        height: 24vh;
+        width: 90%;
+        margin: auto;
+        transition: all 2s ease;
+    }
+    .page1-img1:hover{
+        height: 100vh;
+    }
+    .page1-img2:hover{
+        height: 100vh;
+    }
+    .page1-img3:hover{
+        height: 100vh;
+    }
+    .page1-img4:hover{
+        height: 100vh;
+    }
+    .circle{
+        display: none;
+    }
+    
+}
+
+/* ================= page-1 end =================== */
+
+/* ================= page-2 start =================== */
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+.page2-headding{
+    height: 20vh;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    margin-bottom: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+.page2-headding >h1{
+    line-height: 4vmax;
+    padding-left: 5vw;
+    font-size: 4.5vmax;
+    font-family: 'IM Fell DW Pica SC', serif;
+    /* background-color: red; */
+}
+.page2-headding >h1 >span{
+    padding-left: 8vmax;
+    color: rgba(0, 0, 0, 0.733);
+}
+.page2 >hr{
+    width: 90%;
+    border: 0.1vmax solid rgba(128, 128, 128, 0.719);
+}
+.page2-contener{
+    /* background-color: orchid; */
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.page2-contener-left{
+    height: 60vh;
+    width: 45%;
+    margin-top: 5vh;
+    /* background-color: gold; */
+}
+.page2-contener-left >h1{
+    font-size: 3.5vmax;
+    
+}
+.page2-contener-left >p{
+    font-size: 1.4vmax;
+    padding: 0.5vmax 0;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page2-left-img{
+    height: 40vh;
+    width: 100%;
+    background-image: url(./page2-img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    border-radius: 0.5vmax;
+    box-shadow: 0.2vmax 0.2vmax 0.3vmax black;
+}
+.page2-left-img >i{
+    background-color: whitesmoke;
+    padding: .8vmax;
+    border-radius: 5vmax;
+    font-size: 3vmax;
+    transform: translate(-5vmax ,2.3vmax);
+    box-shadow: 0 0 0.5vmax gray;
+}
+.page2-contener >hr{
+    border: 0.1vmax solid rgba(128, 128, 128, 0.719);
+}
+.page2-contener-right{
+    height: 60vh;
+    width: 45%;
+    margin-top: 5vh;
+    /* background-color: green; */
+}
+.page2-contener-right >h1{
+    font-size: 3.5vmax;
+}
+.page2-contener-right >p{
+    font-size: 1.4vmax;
+    padding: 0.5vmax 0;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page2-right-img{
+    height: 40vh;
+    width: 100%;
+    background-image: url(./page2-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    border-radius: 0.5vmax;
+    box-shadow: 0.2vmax 0.2vmax 0.3vmax black;
+}
+.page2-right-img >i{
+    background-color: whitesmoke;
+    padding: .8vmax;
+    border-radius: 5vmax;
+    font-size: 3vmax;
+    transform: translate(-5vmax ,2.3vmax);
+    box-shadow: 0 0 0.5vmax gray;
+}
+@media (max-width: 600px) {
+    .page2{
+        margin-top: 25vh;
+        /* background-color: orchid; */
+        height: 120vh;
+        width: 100%;
+    }
+    .page2-headding{
+        height: 10vh; 
+    }
+    .page2-contener{
+        flex-direction: column;
+    }
+    .page2 > hr{
+        width: 90%;
+        margin-bottom: 1vh;
+    }
+    .page2-contener-left, .page2-contener-right{
+        width: 100%;
+        
+    }
+}
+
+/* ================= page-2 end =================== */
+
+/* ================= page-3 start =================== */
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    /* background-color: lightpink; */
+}
+.page3-heading{
+    height: 15vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.page3-heading >h1{
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 4.5vmax;   
+}
+.page3-contener{
+    height: 85vh;
+    width: 100%;
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.page3-contener-left{
+    height: 70vh;
+    width: 30%;
+    margin-top: 2vh;
+    /* background-color: olivedrab; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page3-contener-right{
+    height: 70vh;
+    width: 30%;
+    margin-top: 13vh;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page3-left-top, .page3-right-top{
+    height: 33vh;
+    width: 100%;
+    /* background-color: goldenrod; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+.page3-left-top-img{
+    height: 33vh;
+    width: 60%;
+    /* background-color: maroon; */
+    background-image: url(https://i.pinimg.com/564x/a0/65/26/a0652605ec58ef0423dfe099b6eefd06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+}
+.page3-left-bottom-img{
+    height: 33vh;
+    width: 60%;
+    /* background-color: maroon; */
+    background-image: url(https://i.pinimg.com/564x/d3/dd/d0/d3ddd0fe87976de9a2727158df72922d.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+
+}
+.page3-right-top-img{
+    height: 33vh;
+    width: 60%;
+    /* background-color: maroon; */
+    background-image: url(https://i.pinimg.com/564x/8d/47/4c/8d474cc3f0c1c491593646435ff06cf6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+
+}
+.page3-right-bottom-img{
+    height: 33vh;
+    width: 60%;
+    /* background-color: maroon; */
+    background-image: url(https://i.pinimg.com/564x/71/38/79/7138797a80392aaf9b3db845c4742075.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5vmax;
+}
+.page3-left-top-detail, .page3-left-bottom-detail, .page3-right-top-detail, .page3-right-bottom-detail{
+    height: 33vh;
+    width: 40%;
+    margin-left: 1vw;
+    padding: 2vh 0; 
+    text-align: center;
+    /* background-color: aqua; */
+}
+.page3-left-top-detail >p, .page3-left-bottom-detail >p, .page3-right-top-detail >p, .page3-right-bottom-detail >p{
+    margin-top: 2vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page3-left-bottom, .page3-right-bottom{
+    height: 33vh;
+    width: 100%;
+    /* background-color: orangered; */
+    display: flex;
+}
+@media (max-width: 600px) {
+    .page3{
+        height: 150%;
+    }
+    .page3-heading{
+        width: 100%;
+        height: 20vh;
+        /* background-color: red; */
+    }   
+    .page3-contener{
+        width: 100%;
+        height: 100vh;
+        display: initial;
+    }
+    .page3-contener-left{
+        width: 90%;
+        height: 69vh;
+        margin: auto;
+    }
+    .page3-contener-right{
+        width: 90%;
+        height: 71vh;
+        padding-top: 2.5vh;
+        margin: auto;
+    }
+}
+
+/* ================= page-3 end =================== */
+
+/* ================= page-4 start =================== */
+
+.page4-contact{
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+.page4-contact >p{
+    text-align: center;
+    font-size: 1.5vmax;
+    font-weight: 700;
+    /* font-family: 'Nanum Brush Script', cursive; */
+    font-family: cursive;
+    margin-bottom: 1vmax;
+
+}
+.page4-contact-logo{
+    display: flex;
+    gap: 0.7vmax;
+    /* background-color: white; */
+}
+.page4-contact-logo >i{
+    font-size: 2vmax;
+    padding: .5vmax;
+    border-radius: .5vmax;
+    background-color:rgba(53, 50, 50, 0.068);
+    backdrop-filter: blur(2vmax);
+}
+.page4-contact-logo >i:hover{
+    box-shadow: 0 0 0.5vmax black;
+}
